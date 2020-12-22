@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Adeline Graciani</title>
+
+    <script src="https://kit.fontawesome.com/58873ced02.js" crossorigin="anonymous"></script>
+    
+    
+  </head>
+
+  <body>    
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Hi, I am Adeline Graciani</h1>
+          <p>Full-Stack Web Developer</p>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+      <a href="#portfolio" class="prev-arrow">
+        <i class="fas fa-caret-square-up fa-2x prev"></i>
+      </a>
+      
+      <i class="fas fa-caret-square-down fa-2x next"></i>
+
+    </div>
+
+    <div class="container">
+      <p>
+        <strong>My projects</strong>
+      </p>
+      <div class="row">
+          <div class="col-4"></div>
+          <div class="col-8">
+            <h3>Delivery pool</h3>
+            <p>
+               Delivery pool is a  
+            </p>
+          </div>
+      </div>
+
+    </div>
+
+    <section>
+      <div class="row portfolio section">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        <div class= "col">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+       
+    </div>
+    </section>
+    
+     <section>
+      <div class="row resume section">
+        <div class="col">
+            <button>Click to download my resume</button>
+        </div>
+        
+    </div>
+     </section>   
+       
+     
+         
+        
+     
+        
+
+    
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      
+      window.addEventListener('scroll', reveal)
+       function reveal() {
+        let sections = document.querySelectorAll('.section')
+      let revealpoint = 150
+      let windowheight = window.innerHeight
+        for (let i=0; i< sections.length; i++){
+          console.log(sections[i].getBoundingClientRect().top)
+        if (sections[i].getBoundingClientRect().top < windowheight - revealpoint){
+          sections[i].classList.add('active')
+        }
+        else {
+        sections[i].classList.remove('active')
+        }
+        
+        }
+      }
+      </script>
+  </body>
+
+</html>
