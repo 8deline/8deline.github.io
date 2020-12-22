@@ -2,36 +2,35 @@
 
 body,
 html {
-	height: 100%;
+  height: 100%;
 }
 
 .hero-image {
-	background-image: url("Ade.jpeg");
-
-	height: 100%;
-
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+  background-image: url("Ade.jpeg");
+  /* /* max-width: 100%; */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .hero-text {
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .navigation {
-	position: fixed;
-	right: 40px;
-	z-index: 999;
-	bottom: 20px;
-	width: 21px;
-	height: 60px;
+  position: fixed;
+  right: 40px;
+  z-index: 999;
+  bottom: 20px;
+  width: 21px;
+  height: 60px;
 }
 
 /* a {
@@ -42,34 +41,42 @@ a .prev-arrow:link {
 /* color: black; */
 
 a.prev-arrow {
-	color: black;
+  color: black;
 }
 
 .prev {
-	display: block;
-	background-image: radial-gradient(white, rgba(225, 225, 225, 0));
-	cursor: pointer;
-	text-decoration: none;
+  display: block;
+  background-image: radial-gradient(white, rgba(225, 225, 225, 0));
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .next {
-	background-image: radial-gradient(white, rgba(225, 225, 225, 0));
-	display: block;
+  background-image: radial-gradient(white, rgba(225, 225, 225, 0));
+  display: block;
 }
 
 .portfolio {
-	margin: 50px;
-	background-color: bisque;
+  margin: 50px;
+  background-color: bisque;
 }
 
 .section {
-	position: relative;
-	transform: translateY(150px);
-	opacity: 0;
-	transition: all 2s ease;
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
 }
 
 .active {
-	opacity: 1;
-	transform: translateY(0px);
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.projects {
+  text-align: center;
+}
+
+.row {
+  margin: 50px;
 }
