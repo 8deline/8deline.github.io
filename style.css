@@ -37,14 +37,14 @@ html {
   color: white;
 }
 
-.navigation {
+/* .navigation {
   position: fixed;
   right: 40px;
   z-index: 999;
   bottom: 20px;
   width: 21px;
   height: 60px;
-}
+} */
 
 /* a {
 	text-decoration: none;
@@ -53,7 +53,7 @@ a .prev-arrow:link {
 	/* text-decoration: none; */
 /* color: black; */
 
-a.prev-arrow {
+/* a.prev-arrow {
   color: black;
 }
 
@@ -67,12 +67,7 @@ a.prev-arrow {
 .next {
   background-image: radial-gradient(white, rgba(225, 225, 225, 0));
   display: block;
-}
-
-.portfolio {
-  margin: 50px;
-  background-color: bisque;
-}
+} */
 
 .section {
   position: relative;
@@ -94,8 +89,89 @@ a.prev-arrow {
   margin: 50px;
 }
 
-@media only screen and (max-width: 727px) {
-  .hero-image {
-    background-position: 80%;
-  }
+.project-name {
+  color: #5e9516;
+}
+
+.tech-stack {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  margin: 0;
+  background: rgb(248, 244, 239);
+  position: relative;
+}
+
+.tech-stack-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(105, 105, 105, 0.6);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s;
+  color: white;
+}
+
+.tech-stack-overlay:hover {
+  opacity: 1;
+}
+
+.tech-stack-overlay:hover > * {
+  transform: translate(700px, 150px);
+}
+
+/* .tech-stack-overlay > * {
+  transform: translateY(100px);
+} */
+
+.tech-stack-overlay h1 {
+  color: white;
+  position: absolute;
+  transform: translate(700px, 300px);
+  font-size: 400%;
+  font-weight: 600;
+  transition: transform 0.25s;
+}
+
+.tech-container {
+  position: absolute;
+  margin: 100px;
+}
+
+.stack-1,
+.stack-2 {
+  margin: 5px;
+}
+.stack-1 span {
+  display: inline-block;
+  font-weight: 900;
+  margin: 5px;
+  font-size: 130%;
+  color: black;
+}
+
+.stack-2 {
+  position: absolute;
+  left: 15%;
+  margin: 5 px;
+}
+
+.stack-2 span {
+  display: inline-block;
+  font-weight: 900;
+  margin: 5px;
+  font-size: 140%;
+
+  color: black;
+}
+
+.connect {
+  width: 100%;
+  height: 200px;
+  color: #678;
+  font-size: 130%;
+  padding: 50px;
+  text-align: center;
 }
