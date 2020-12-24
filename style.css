@@ -2,6 +2,7 @@
 
 body,
 html {
+  margin: 0px;
   height: 100%;
   font-family: "EB Garamond", serif;
   font-family: "Roboto", sans-serif;
@@ -87,8 +88,9 @@ a .prev-arrow:link {
   text-align: center;
 }
 
-.row {
-  margin: 50px;
+.project {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .project-name {
@@ -142,10 +144,6 @@ a .prev-arrow:link {
   margin: 100px;
 }
 
-.stack-1,
-.stack-2 {
-  margin: 5px;
-}
 .stack-1 span {
   display: inline-block;
   font-weight: 900;
@@ -176,4 +174,26 @@ a .prev-arrow:link {
   font-size: 130%;
   padding: 50px;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .tech-stack-overlay:hover > * {
+    transform: translate(0px, 100px);
+  }
+  .stack-1,
+  .stack-2 {
+    margin: 0px;
+    display: block;
+  }
+
+  .stack-2 {
+    left: 0px;
+  }
+
+  /* .tech-stack {
+    height: auto;
+  } */
+  .tech-container {
+    margin: 0px;
+  }
 }
