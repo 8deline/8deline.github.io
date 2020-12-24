@@ -91,6 +91,7 @@ a .prev-arrow:link {
 .project {
   margin-bottom: 50px;
   margin-top: 50px;
+  margin-left: 50px;
 }
 
 .project-name {
